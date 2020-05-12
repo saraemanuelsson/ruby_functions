@@ -1,5 +1,7 @@
 # TODO: write implementation here
 
+require 'date'
+
 def return_five()
     return 5
 end
@@ -34,4 +36,8 @@ end
 
 def add_string_as_number(str_1, str_2)
     str_1.to_i + str_2.to_i
+end
+
+def number_to_full_month_name(number)
+    return Date::MONTHNAMES[number]
 end
