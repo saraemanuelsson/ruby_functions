@@ -50,8 +50,12 @@ def volume_of_cube(height, width, length)
     return height * width * length
 end
 
-def volume_of_sphere(radius)
-    return 4.0/3 * Math::PI * radius**3
+def volume_of_sphere(radius) 
+    return (4.0/3 * Math::PI * radius**3).round(2) 
 end
 
-puts volume_of_sphere(6)
+def fahrenheit_to_celcius(fahrenheit)
+    return (fahrenheit - 32) * 5/9
+end
+
+puts fahrenheit_to_celcius(65)
