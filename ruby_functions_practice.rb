@@ -41,3 +41,11 @@ end
 def number_to_full_month_name(number)
     return Date::MONTHNAMES[number]
 end
+
+def number_to_short_month_name(number)
+    return Date::ABBR_MONTHNAMES[number]
+end
+
+def volume_of_cube(height, width, length)
+    return height * width * length
+end
